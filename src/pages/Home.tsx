@@ -83,7 +83,7 @@ const Home: React.FC = () => {
     // Remove "reports/" prefix if it exists
     //static//tmp/reports/report_1222_20250912230400.pdf
     console.log(pdfPath);
-    const cleanedPdfPath = pdfPath.startsWith('/temp/reports') ? pdfPath.substring('/temp/reports/'.length) : pdfPath;
+    const cleanedPdfPath = pdfPath.startsWith('/tmp/reports') ? pdfPath.substring('/tmp/reports/'.length) : pdfPath;
     const fullPath = `${API_BASE_URL}/static/${cleanedPdfPath}`;
     window.open(fullPath, '_blank');
   };
