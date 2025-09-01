@@ -1,0 +1,1 @@
+export const API_BASE_URL = 'https://paulofn-draft-estimation.hf.space'; // Change this to your backend IP if needed
