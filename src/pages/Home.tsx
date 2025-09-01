@@ -82,6 +82,7 @@ const Home: React.FC = () => {
   const handleDownloadPdf = (pdfPath: string) => {
     // Remove "reports/" prefix if it exists
     //static//tmp/reports/report_1222_20250912230400.pdf
+    console.log(pdfPath);
     const cleanedPdfPath = pdfPath.startsWith('/temp/reports') ? pdfPath.substring('/temp/reports/'.length) : pdfPath;
     const fullPath = `${API_BASE_URL}/static/${cleanedPdfPath}`;
     window.open(fullPath, '_blank');
